@@ -1,0 +1,4 @@
+## Changelog
+
+# v0.1.0
+Basic script functionality to send a message to a Discord channel when the computer is turned on.
