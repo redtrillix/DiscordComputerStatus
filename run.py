@@ -1,4 +1,4 @@
-## Version: 2.0.1
+## Version: 2.0.2
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
