@@ -2,21 +2,23 @@
 
 # GIT
 - Re-added `.env` to `.gitignore` [[f297bd2](https://github.com/redtrillix/DiscordComputerStatus/commit/f297bd2e5be6084e3a0a86cca9259fd0fcd9fc59) by [redtrillix](https://github.com/redtrillix)]
-- Updated changelog [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
-    - Changed file name from `changelog.txt` to `CHANGELOG.md`
-    - Added release links
-    - Added commit links
-    - Added contributor links
-    - Added `GIT` section
-    - Converted to dot-point formating
-    - Slightly improved text of `v2.0.2` change
-    - General formating improvements
-    - Added release type badges
+- Updated changelog
+    - Changed file extension from `.txt` to `.md` [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Changed file name from `changelog` to `CHANGELOG` [[2d53a3b](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/2d53a3b6bbc07939321d59453d3410b720549eb9) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Added release links [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Added commit links [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Added contributor links [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Added `GIT` section [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Converted to dot-point formating [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Slightly improved text of `v2.0.2` change [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - General formating improvements [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) & [2d53a3b](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/2d53a3b6bbc07939321d59453d3410b720549eb9) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
+    - Added release type badges [[19283e5](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/19283e5fe559b56ea11e65e2597be3647c818f54) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
         - `ALPHA`
         - `PATCH`
         - `MINOR`
         - `RELEASE`
         - `PRE`
+- Added logos to the `Windows` & `Python` badges in `README.md` [[49dc94c](https://github.com/JamesBLDZMB/DiscordComputerStatus/commit/49dc94c5ffe0398cf30b10f5c66d1e194bdd1829) by [JamesBLDZMB](https://github.com/JamesBLDZMB)]
 
 # [v2.1.0](https://github.com/redtrillix/DiscordComputerStatus/releases/tag/v2.1.0) `MINOR`
 - Added the listed services as a variable under `.env`, they will no longer be under `run.py` [[a563238](https://github.com/redtrillix/DiscordComputerStatus/commit/a56323816c89aa07c37f05ff74c5b98173941613) by [redtrillix](https://github.com/redtrillix) & [JakeWasHere](https://github.com/JakeWasHere)]  
