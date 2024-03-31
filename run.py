@@ -1,4 +1,4 @@
-## Version: 0.1.
+## Version: 0.1.1
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Owner: Zachary G (redtrillix)
