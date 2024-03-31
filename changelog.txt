@@ -1,5 +1,10 @@
 ## Changelog
 
+# v2.0.1
+Fix `python-version-check.yml` not running correctly.
+Add `.gitignore` as mentioned in previous changelog.
+    Added `.env` to gitignore.
+
 # v2.0.0
 Added dotenv to have environment variables (channed id, bot token) seperate from the main script in the form of a .env file.
     This is more for my sake cause i'm an idiot and will end up leaking sensitive info.
