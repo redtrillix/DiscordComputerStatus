@@ -1,4 +1,4 @@
-## Version: 1.1.0
+## Version: 2.0.0
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
@@ -11,12 +11,16 @@ from datetime import datetime
 import socket
 import psutil
 import requests
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Discord bot token
-TOKEN = 'your_bot_token_here'
+TOKEN = os.getenv('TOKEN')
 
 # Channel ID where you want to send the message
-CHANNEL_ID = 'your_channel_id_here'
+CHANNEL_ID = os.getenv('CHANNEL_ID')
 
 # Define the services that are up and running
 services = ["Service1", "Service2", "Service3", "Service4", "Service5"]
@@ -44,8 +48,9 @@ MESSAGE += f"🖥️ Hostname: {hostname}\n"
 MESSAGE += f"🌐 Public IP Address: {public_ip}\n"
 MESSAGE += f"💻 CPU Usage: {cpu_usage}%\n"
 MESSAGE += f"🧠 Memory Usage: {memory_usage}%\n\n"
-MESSAGE += "**Services Running:**\n\n"
-MESSAGE += "\n".join([f"- {service}" for service in services])
+MESSAGE += "**Services Running:**\n"
+for index, service in enumerate(services, start=1):
+    MESSAGE += f"{index}. {service}\n"
 
 # Define the intents
 intents = Intents.default()
