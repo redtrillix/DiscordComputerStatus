@@ -1,4 +1,4 @@
-## Version: 2.0.2
+## Version: 2.1.0
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
@@ -22,8 +22,8 @@ TOKEN = os.getenv('TOKEN')
 # Channel ID where you want to send the message
 CHANNEL_ID = os.getenv('CHANNEL_ID')
 
-# Define the services that are up and running
-services = ["Service1", "Service2", "Service3", "Service4", "Service5"]
+# Retrieve services from .env and split them into a list
+SERVICES = os.getenv('SERVICES').split(',')
 
 # Get the current time
 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -48,9 +48,13 @@ MESSAGE += f"🖥️ Hostname: {hostname}\n"
 MESSAGE += f"🌐 Public IP Address: {public_ip}\n"
 MESSAGE += f"💻 CPU Usage: {cpu_usage}%\n"
 MESSAGE += f"🧠 Memory Usage: {memory_usage}%\n\n"
-MESSAGE += "**Services Running:**\n"
-for index, service in enumerate(services, start=1):
-    MESSAGE += f"{index}. {service}\n"
+MESSAGE += "**Services Running:**\n\n"
+MESSAGE += "```"
+MESSAGE += f"{'Service':<20}{'Status':<10}\n"
+MESSAGE += "-" * 30 + "\n"
+for service in SERVICES:
+    MESSAGE += f"{service:<20}{'Running':<10}\n"
+MESSAGE += "```"
 
 # Define the intents
 intents = Intents.default()

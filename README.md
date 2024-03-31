@@ -1,3 +1,8 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/redtrillix/DiscordComputerStatus?style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/redtrillix/DiscordComputerStatus?style=flat-square)](https://github.com/redtrillix/DiscordComputerStatus/blob/master/LICENSE)
+![Static Badge](https://img.shields.io/badge/Windows-brightgreen?style=flat)
+![Static Badge](https://img.shields.io/badge/Python-blue?style=flat)
+
 # Computer Status Discord Bot
 
 This Python script sends a notification message to a Discord channel when the computer is turned on. The message includes system information such as the current time, hostname, public IP address, CPU usage, memory usage, and a list of specified running services.
