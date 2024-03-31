@@ -1,5 +1,10 @@
 ## Changelog
 
+# v1.0.0 - Initial Full Release
+Added psutil dependency for CPU and Memory logging in Discord message.
+Added socket dependency for Hostname and IP logging in Discord message.
+Added 'Service4', and 'Service5' as two more generic service examples.
+
 # v0.3.1
 Changed `CHANGELOG.txt` to show newest to oldest changes.
 Compact message sent to Discord.
@@ -15,5 +20,5 @@ Modified the script to include a more detailed message indicating manually speci
 # v0.1.1
 Fix intents missing from script.
 
-# v0.1.0
+# v0.1.0 - Initial Alpha Release
 Basic script functionality to send a message to a Discord channel when the computer is turned on.
