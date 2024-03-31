@@ -1,9 +1,10 @@
-## Version: 0.1.0
+## Version: 0.1.
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Owner: Zachary G (redtrillix)
 
 import discord
+from discord import Intents
 import os
 
 # Discord bot token
@@ -15,8 +16,14 @@ CHANNEL_ID = 'your_channel_id_here'
 # Message to be sent
 MESSAGE = "Computer is turned on!"
 
-# Create a Discord client
-client = discord.Client()
+# Define the intents
+intents = Intents.default()
+intents.typing = False
+intents.presences = False
+intents.messages = True  # Enable receiving message events
+
+# Create a Discord client with intents
+client = discord.Client(intents=intents)
 
 # Event called when the bot is ready
 @client.event
