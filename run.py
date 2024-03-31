@@ -1,4 +1,4 @@
-## Version: 1.0.0
+## Version: 1.1.0
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
@@ -10,6 +10,7 @@ import os
 from datetime import datetime
 import socket
 import psutil
+import requests
 
 # Discord bot token
 TOKEN = 'your_bot_token_here'
@@ -26,8 +27,11 @@ current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # Get the hostname
 hostname = socket.gethostname()
 
-# Get the IP address
-ip_address = socket.gethostbyname(hostname)
+# Get the public IP address
+try:
+    public_ip = requests.get('https://httpbin.org/ip').json()['origin']
+except Exception as e:
+    public_ip = "Unavailable"
 
 # Get CPU and memory usage
 cpu_usage = psutil.cpu_percent()
@@ -37,7 +41,7 @@ memory_usage = psutil.virtual_memory().percent
 MESSAGE = f"**System Notification:**\n\n"
 MESSAGE += f"🔔 System turned on at {current_time}.\n"
 MESSAGE += f"🖥️ Hostname: {hostname}\n"
-MESSAGE += f"🌐 IP Address: {ip_address}\n"
+MESSAGE += f"🌐 Public IP Address: {public_ip}\n"
 MESSAGE += f"💻 CPU Usage: {cpu_usage}%\n"
 MESSAGE += f"🧠 Memory Usage: {memory_usage}%\n\n"
 MESSAGE += "**Services Running:**\n\n"

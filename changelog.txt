@@ -1,5 +1,8 @@
 ## Changelog
 
+# v1.1.0
+Change IP logging from Local computer interface IP to using the service 'https://httpbin.org' to get the Public IP of the computer.
+
 # v1.0.0 - Initial Full Release
 Added psutil dependency for CPU and Memory logging in Discord message.
 Added socket dependency for Hostname and IP logging in Discord message.
