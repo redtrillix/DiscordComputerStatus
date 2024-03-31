@@ -1,5 +1,8 @@
 ## Changelog
 
+# v2.0.2
+Attempt 2 - Fix `python-version-check.yml` not running correctly.
+
 # v2.0.1
 Fix `python-version-check.yml` not running correctly.
 Add `.gitignore` as mentioned in previous changelog.
