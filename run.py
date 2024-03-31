@@ -1,4 +1,4 @@
-## Version: 0.3.0
+## Version: 0.3.1
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
@@ -16,15 +16,16 @@ TOKEN = 'your_bot_token_here'
 CHANNEL_ID = 'your_channel_id_here'
 
 # Define the services that are up and running
-services = ["Satisfactory", "Music Bot", "Lyric Bot", "Palworld", "Minecraft"]
+services = ["Service1", "Service2", "Service3"]
 
 # Get the current time
 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # Create the detailed message
-MESSAGE = f"Computer is turned on at {current_time}! Services that are up and running:\n\n"
-for service in services:
-    MESSAGE += f"- {service}\n"
+MESSAGE = f"**System Notification:**\n\n"
+MESSAGE += f"🔔 System turned on at {current_time}.\n"
+MESSAGE += "**Services Running:**\n\n"
+MESSAGE += "\n".join([f"- {service}" for service in services])
 
 # Define the intents
 intents = Intents.default()

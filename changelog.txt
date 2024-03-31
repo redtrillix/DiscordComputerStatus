@@ -1,14 +1,19 @@
 ## Changelog
 
-# v0.1.0
-Basic script functionality to send a message to a Discord channel when the computer is turned on.
-
-# v0.1.1
-Fix intents missing from script.
-
-# v0.2.0
-Modified the script to include a more detailed message indicating manually specified services are up and running.
+# v0.3.1
+Changed `CHANGELOG.txt` to show newest to oldest changes.
+Compact message sent to Discord.
+Fix listed services back to the generic listings in `run.py`.
 
 # v0.3.0
 Add time of script run in to Discord message.
 Rename changelog.txt to CHANGELOG.txt
+
+# v0.2.0
+Modified the script to include a more detailed message indicating manually specified services are up and running.
+
+# v0.1.1
+Fix intents missing from script.
+
+# v0.1.0
+Basic script functionality to send a message to a Discord channel when the computer is turned on.
