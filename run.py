@@ -1,11 +1,13 @@
-## Version: 0.2.0
-## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
+## Version: 0.3.0
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
+## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
+## Changelog: https://github.com/redtrillix/DiscordComputerStatus/blob/main/CHANGELOG.txt
 ## Owner: Zachary G (redtrillix)
 
 import discord
 from discord import Intents
 import os
+from datetime import datetime
 
 # Discord bot token
 TOKEN = 'your_bot_token_here'
@@ -14,10 +16,13 @@ TOKEN = 'your_bot_token_here'
 CHANNEL_ID = 'your_channel_id_here'
 
 # Define the services that are up and running
-services = ["Service1", "Service2", "Service3"]
+services = ["Satisfactory", "Music Bot", "Lyric Bot", "Palworld", "Minecraft"]
+
+# Get the current time
+current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # Create the detailed message
-MESSAGE = "Computer is turned on! Services that are up and running:\n\n"
+MESSAGE = f"Computer is turned on at {current_time}! Services that are up and running:\n\n"
 for service in services:
     MESSAGE += f"- {service}\n"
 
