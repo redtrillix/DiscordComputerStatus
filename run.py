@@ -1,4 +1,4 @@
-## Version: 0.1.
+## Version: 0.2.0
 ## Git Repository: https://github.com/redtrillix/DiscordComputerStatus
 ## License: https://github.com/redtrillix/DiscordComputerStatus/raw/main/LICENSE
 ## Owner: Zachary G (redtrillix)
@@ -13,8 +13,13 @@ TOKEN = 'your_bot_token_here'
 # Channel ID where you want to send the message
 CHANNEL_ID = 'your_channel_id_here'
 
-# Message to be sent
-MESSAGE = "Computer is turned on!"
+# Define the services that are up and running
+services = ["Service1", "Service2", "Service3"]
+
+# Create the detailed message
+MESSAGE = "Computer is turned on! Services that are up and running:\n\n"
+for service in services:
+    MESSAGE += f"- {service}\n"
 
 # Define the intents
 intents = Intents.default()

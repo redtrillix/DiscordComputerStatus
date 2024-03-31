@@ -5,3 +5,6 @@ Basic script functionality to send a message to a Discord channel when the compu
 
 # v0.1.1
 Fix intents missing from script.
+
+# v0.2.0
+Modified the script to include a more detailed message indicating manually specified services are up and running.
