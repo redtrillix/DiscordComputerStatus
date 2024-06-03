@@ -1,7 +1,7 @@
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/redtrillix/DiscordComputerStatus?style=flat-square)
 [![GitHub license](https://img.shields.io/github/license/redtrillix/DiscordComputerStatus?style=flat-square)](https://github.com/redtrillix/DiscordComputerStatus/blob/master/LICENSE)
-![Static Badge](https://img.shields.io/badge/Windows-brightgreen?style=flat)
-![Static Badge](https://img.shields.io/badge/Python-blue?style=flat)
+![Static Badge](https://img.shields.io/badge/Windows-brightgreen?style=flat&logo=windows)
+![Static Badge](https://img.shields.io/badge/Python-blue?style=flat&logo=python)
 
 # Computer Status Discord Bot
 
